@@ -1,5 +1,14 @@
 This is an Expo/React Native mobile application. Prioritize mobile-first patterns, performance, and cross-platform compatibility.
 
+## Commit messages
+
+- Write commit subjects and bodies in English.
+- Follow Conventional Commits: `type(scope): description` (scope is optional).
+- Use an appropriate type: `feat`, `fix`, `refactor`, `docs`, `style`, `test`, `build`, `ci`, `perf`, or `chore`.
+- Use a concise, imperative description without a trailing period.
+- Keep commits focused on one logical change. Mark breaking changes with `!` and explain them in a `BREAKING CHANGE:` footer.
+- Example: `feat(admin): add web dashboard for car wash orders`.
+
 ## Expo has changed — do not trust your training data
 
 Expo ships breaking changes every SDK release. APIs you remember are likely renamed, moved, or removed. Before writing any code that touches an Expo, EAS, or React Native API:
