@@ -1,7 +1,9 @@
 {
   "expo": {
-    "name": "meu-app-novo",
-    "slug": "meu-app-novo",
+    "name": "Lava Já",
+    "slug": "lava-ja",
+    "scheme": "lava-ja",
+    "description": "Serviços de lavagem e fidelização do Lava Já – Matola.",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,6 +21,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
