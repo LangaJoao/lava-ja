@@ -1,1 +1,2 @@
-export { default } from '../features/client/screens/ClientScreen';
+import { Redirect } from 'expo-router';
+export default function ClientRedirect() { return <Redirect href="/mobile/client" />; }

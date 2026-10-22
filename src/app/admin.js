@@ -1,1 +1,1 @@
-export { default } from '../features/admin/screens/AdminDashboard';
+export { default } from '../features/admin/screens/SystemAdmin';

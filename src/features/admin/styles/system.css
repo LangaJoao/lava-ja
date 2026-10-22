@@ -1,0 +1,376 @@
+.sys-admin,
+.sys-admin * {
+  box-sizing: border-box;
+}
+.sys-admin {
+  height: 100dvh;
+  display: flex;
+  background: #f5f6f8;
+  color: #172033;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 14px;
+}
+.sys-admin button,
+.sys-admin input,
+.sys-admin select {
+  font: inherit;
+}
+.sys-admin button {
+  cursor: pointer;
+}
+.sys-admin button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.sys-admin input,
+.sys-admin select {
+  min-height: 42px;
+  border: 1px solid #dce3ec;
+  border-radius: 8px;
+  padding: 9px 12px;
+  background: white;
+  color: #172033;
+}
+.sys-admin button:focus-visible,
+.sys-admin input:focus-visible,
+.sys-admin select:focus-visible {
+  outline: 3px solid #be173366;
+  outline-offset: 2px;
+}
+.sys-sidebar {
+  width: 250px;
+  background: #172033;
+  color: white;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 18px;
+  gap: 38px;
+}
+.sys-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 0 10px;
+}
+.sys-brand b {
+  background: #be1733;
+  padding: 13px;
+  border-radius: 14px;
+  font-size: 20px;
+}
+.sys-brand small {
+  display: block;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  margin-top: 6px;
+  color: #b4c2d6;
+}
+.sys-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.sys-sidebar nav button {
+  background: none;
+  color: #c4cedd;
+  border: 0;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: left;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.sys-sidebar nav button.active {
+  background: #be1733;
+  color: white;
+}
+.sys-sidebar nav button:hover {
+  background: #ffffff15;
+}
+.sys-sidebar nav button.active:hover {
+  background: #a9132c;
+}
+.sys-sidebar nav span {
+  font-size: 20px;
+  width: 24px;
+}
+.sys-sidebar-bottom {
+  margin-top: auto;
+  padding: 10px;
+  line-height: 1.7;
+  color: #b4c2d6;
+}
+.sys-sidebar-bottom p {
+  color: white;
+}
+.sys-sidebar-bottom button {
+  display: block;
+  border: 1px solid #64748b;
+  background: none;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.sys-admin main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.sys-topbar {
+  background: white;
+  border-bottom: 1px solid #e1e7ef;
+  padding: 25px 34px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: #687b96;
+}
+.sys-admin-badge {
+  color: #172033;
+  font-weight: 600;
+}
+.sys-content {
+  padding: 32px;
+  overflow-y: auto;
+  flex: 1;
+}
+.sys-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+.sys-heading h1 {
+  font-size: 32px;
+  margin: 8px 0;
+}
+.sys-heading p {
+  color: #687b96;
+}
+.sys-eyebrow {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+.sys-primary {
+  background: #be1733;
+  color: white;
+  border: 0;
+  border-radius: 9px;
+  padding: 12px 16px;
+  min-height: 42px;
+  font-weight: 600 !important;
+}
+.sys-banner {
+  background: #fff0f3;
+  border: 1px solid #f1cdd5;
+  border-radius: 10px;
+  padding: 15px 18px;
+  color: #8e2940;
+  line-height: 1.65;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.sys-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  background: white;
+  padding: 18px;
+  border: 1px solid #e1e7ef;
+  border-radius: 12px;
+}
+.sys-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #687b96;
+  font-size: 12px;
+  flex: 1;
+  min-width: 155px;
+}
+.sys-period {
+  color: #687b96;
+  font-size: 12px;
+}
+.sys-notice {
+  color: #0b8940;
+  min-height: 18px;
+  font-size: 13px;
+}
+.sys-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin: 15px 0 25px;
+}
+.sys-stats article {
+  background: white;
+  border: 1px solid #e1e7ef;
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+.sys-stats span {
+  font-size: 12px;
+  color: #687b96;
+}
+.sys-stats strong {
+  font-size: clamp(20px, 2vw, 30px);
+  overflow-wrap: anywhere;
+}
+.sys-stats small {
+  color: #687b96;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.sys-panel {
+  background: white;
+  border: 1px solid #e1e7ef;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.sys-panel-heading {
+  padding: 22px 25px;
+}
+.sys-panel-heading h2 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+.sys-panel-heading p {
+  font-size: 12px;
+  color: #687b96;
+  margin: 0;
+  line-height: 1.7;
+}
+.sys-table {
+  overflow: auto;
+}
+.sys-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  white-space: nowrap;
+}
+.sys-table th {
+  background: #f8fafc;
+  font-size: 11px;
+  color: #687b96;
+  padding: 15px 20px;
+}
+.sys-table td {
+  padding: 18px 20px;
+  border-bottom: 1px solid #edf0f5;
+  font-size: 12px;
+}
+.sys-table tr:last-child td {
+  border-bottom: 0;
+}
+.sys-table .sys-comment {
+  white-space: normal;
+  min-width: 220px;
+  max-width: 500px;
+  overflow-wrap: anywhere;
+}
+.sys-link {
+  border: 0;
+  background: none;
+  padding: 0;
+  color: #be1733;
+  font-weight: 600 !important;
+  text-align: left;
+}
+.sys-fee {
+  color: #be1733;
+  font-weight: 700;
+}
+.sys-tag {
+  background: #e5f5ed;
+  color: #08783c;
+  padding: 5px 8px;
+  border-radius: 20px;
+  font-size: 11px;
+}
+.sys-empty {
+  padding: 25px;
+  text-align: center;
+  color: #687b96;
+}
+.sys-footer {
+  color: #687b96;
+  padding: 16px 0;
+  font-size: 11px;
+}
+@media (max-width: 1100px) {
+  .sys-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .sys-sidebar {
+    width: 215px;
+  }
+  .sys-content {
+    padding: 22px;
+  }
+}
+@media (max-width: 750px) {
+  .sys-admin {
+    flex-direction: column;
+  }
+  .sys-sidebar {
+    width: 100%;
+    padding: 16px;
+    gap: 15px;
+  }
+  .sys-sidebar nav {
+    flex-direction: row;
+    overflow: auto;
+  }
+  .sys-sidebar nav button {
+    white-space: nowrap;
+    padding: 10px;
+  }
+  .sys-sidebar nav span {
+    display: none;
+  }
+  .sys-sidebar-bottom {
+    display: none;
+  }
+  .sys-brand {
+    font-size: 20px;
+  }
+  .sys-brand b {
+    padding: 8px;
+  }
+  .sys-content {
+    padding: 18px;
+  }
+  .sys-topbar {
+    padding: 16px;
+  }
+  .sys-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .sys-stats article {
+    padding: 16px;
+  }
+  .sys-admin-badge {
+    font-size: 11px;
+  }
+}
